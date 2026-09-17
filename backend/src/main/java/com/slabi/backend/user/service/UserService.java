@@ -1,9 +1,11 @@
-package com.slabi.user.service;
+package com.slabi.backend.user.service;
 
-import com.slabi.user.entity.User;
-import com.slabi.user.repository.UserRepository;
 import java.util.List;
 import org.springframework.stereotype.Service;
+
+import com.slabi.backend.user.entity.User;
+import com.slabi.backend.user.repository.UserRepository;
+import com.slabi.backend.user.dto.CreateUserRequest;
 
 @Service
 public class UserService {
@@ -18,7 +20,8 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User save(User user) {
+    public User save(CreateUserRequest request) {
+        User user = new User(request.name(), request.email(), request.passwordHash(), request.role());
         return userRepository.save(user);
     }
 }
