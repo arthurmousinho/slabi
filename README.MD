@@ -445,18 +445,18 @@ Durante o desenvolvimento serão consideradas:
 
 ## Fase 01 — Setup
 
-- [ ] Criar projeto Spring Boot
-- [ ] Configurar Maven
-- [ ] Configurar PostgreSQL
-- [ ] Configurar Docker Compose
-- [ ] Configurar Flyway
-- [ ] Criar estrutura inicial
+- [x] Criar projeto Spring Boot
+- [x] Configurar Maven
+- [x] Configurar PostgreSQL
+- [x] Configurar Docker Compose
+- [x] Configurar Flyway
+- [x] Criar estrutura inicial
 - [ ] Configurar tratamento de exceções
 - [ ] Configurar OpenAPI
 
 ## Fase 02 — Usuários
 
-- [ ] User entity
+- [x] User entity
 - [ ] Repository
 - [ ] Service
 - [ ] DTOs
