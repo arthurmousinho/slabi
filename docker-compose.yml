@@ -1,0 +1,17 @@
+services:
+
+  postgres:
+    image: postgres:17
+    container_name: slabi-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: slabi
+      POSTGRES_USER: slabi
+      POSTGRES_PASSWORD: slabi
+    ports:
+      - "5432:5432"
+    volumes:
+      - slabi-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  slabi-postgres-data:
